@@ -2,12 +2,21 @@
 function Pizza(topping, size, ) {
 	this.topping = topping;
   this.size = size;
-  this.toppings = [];
-  
+  this.toppings = ["cheese"];
+
 }
 
-function Pizza.prototype.pizzaCost = function() {
-  return 0;
+  Pizza.prototype.pizzaCost = function() {
+  for (i = 0; i >= this.toppings.length; i++)
+  {
+    console.log("Failed test")
+  }
 }
 
+
+//Testing constructor / prototypes (dev)
+let firstPizza = new Pizza("cheese", "medium")
+
+console.log(firstPizza)
+console.log(firstPizza.toppings.length)
 //UI Logic
