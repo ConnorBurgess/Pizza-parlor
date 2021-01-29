@@ -1,0 +1,11 @@
+.jumbotron {
+  background-color: rgb(1,99,145);
+  height: 6vw;
+  font-size: 2vw;
+  margin-top: 5vw;
+  color: white;
+}
+
+body {
+  background-color: whitesmoke;
+}

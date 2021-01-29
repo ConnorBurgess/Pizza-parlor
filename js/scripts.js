@@ -16,9 +16,12 @@ Pizza.prototype.pizzaCost = function () {
   return ( this.size === "small" ? this.totalCost += 10
       : this.size === "medium" ? this.totalCost += 14
         : this.size === "large" ? this.totalCost += 20
-          : this.totalCost += 24)
+          : this.totalCost += 24);
 }
 
+Pizza.prototype.createPizza = function () {
+  
+}
 //UI Logic
 let firstPizza = new Pizza("cheese", "medium")
 firstPizza.pizzaCost();
