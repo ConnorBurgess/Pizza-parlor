@@ -36,6 +36,9 @@ Expect: (Pizza.pizzaCost.toppings["cheese"].toEqual([3]);
 Test: "It will add $10 to totalCost for any size pizza." 
 Expect: (Pizza.pizzaCost.small["small"].toEqual([totalCost + 10]);
 
+Test: "It will add $10 to totalCost for "small" size, $14 for "medium, "$20 for large, $24 for extra large" 
+Expect: (Pizza.pizzaCost.small["medium"].toEqual([totalCost + 14]);
+
 
 
 ## To Do:
