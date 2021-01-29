@@ -7,8 +7,8 @@ function Pizza(topping, size, ) {
 }
 
 Pizza.prototype.pizzaCost = function() {
+ // this.toppings.push(this.topping)
   for (i = 0; i < this.toppings.length; i++){
-  console.log("hello");
   this.totalCost = this.totalCost + 3;
   console.log(this.totalCost)
 }

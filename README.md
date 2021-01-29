@@ -33,6 +33,9 @@ Pizza.prototype.pizzaCost()
 Test: "It will add $3 for each counted index in a toppings[] array." 
 Expect: (Pizza.pizzaCost.toppings["cheese"].toEqual([3]);
 
+Test: "It will add $10 to totalCost for any size pizza." 
+Expect: (Pizza.pizzaCost.small["small"].toEqual([totalCost + 10]);
+
 
 
 ## To Do:
