@@ -34,10 +34,12 @@ Test: "It will add $3 for each counted index in a toppings[] array."
 Expect: (Pizza.pizzaCost.toppings["cheese"].toEqual([3]);
 
 Test: "It will add $10 to totalCost for any size pizza." 
-Expect: (Pizza.pizzaCost.small["small"].toEqual([totalCost + 10]);
+Expect: (Pizza.pizzaCost["small"].toEqual([totalCost + 10]);
 
 Test: "It will add $10 to totalCost for "small" size, $14 for "medium, "$20 for large, $24 for extra large" 
-Expect: (Pizza.pizzaCost.small["medium"].toEqual([totalCost + 14]);
+Expect: (Pizza.pizzaCost["medium"].toEqual([totalCost + 14]); 
+        (Pizza.pizzaCost["large"].toEqual([totalCost + 20]);
+        (Pizza.pizzaCost["extralarge"].toEqual([totalCost + 24]);
 
 
 
