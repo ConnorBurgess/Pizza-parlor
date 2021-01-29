@@ -33,10 +33,10 @@ console.log(newPizza)
 
 
 $(document).ready(function () {
-
+  $("#btn-small, #btn-medium, #btn-large, #btn-XL").fadeIn(1500);
   $("#btn-size").click(function (event) {
     event.preventDefault();
-    $("#btn-small, #btn-medium, #btn-large, #btn-XL").show();
+
     $("#btn-left, #btn-right").hide();
 
   });
@@ -44,18 +44,30 @@ $(document).ready(function () {
   $("#btn-small, #btn-medium, #btn-large, #btn-XL").click(function (event) {
     let clickedId = $(this).attr("id").slice(4).charAt(0).toUpperCase() + $(this).attr("id").slice(5) + " ";
     $("#output-text-area").append(clickedId);
-    $("#btn-small, #btn-medium, #btn-large, #btn-XL").hide();
-    $("#btn-left, #btn-right").show();
+    $("#btn-small, #btn-medium, #btn-large, #btn-XL, #btn-size").hide();
+    $("#btn-left, #btn-right, #btn-add #btn-checkout").fadeIn(1000);
   });
 
   $("#btn-right").click(function (event) {
-    $("#output-text-area").append(toppingArr[clickCounter] + " ") ;
+    $("#topping-text-area").text(toppingArr[clickCounter] + " ") ;
     clickCounter++;
     console.log(clickCounter.length);
     console.log(toppingArr.length);
     if (clickCounter >= toppingArr.length) {
       clickCounter = 0;
     }
+  });
+
+  $("#btn-add").click(function (event) {
+    console.log(toppingArr[clickCounter]);
+    newPizza.toppings.push(toppingArr[clickCounter]);
+
+  });
+
+  $("#btn-checkout").click(function (event) {
+    console.log(toppingArr[clickCounter]);
+    newPizza.toppings.push(toppingArr[clickCounter]);
+
   });
 
   $("#btn-toppings").click(function (event) {
