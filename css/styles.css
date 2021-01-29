@@ -104,9 +104,13 @@ user-select: none;
   position:absolute;
   display:flex;
   bottom: 1vw;
+  right: 28vw;
+  font-size: 1.5vw;
+}
+#topping-text-area {
+  position:absolute;
+  display:flex;
+  bottom: 1vw;
   right: 21vw;
   font-size: 1.5vw;
 }
-
-
-/* animated arrow */

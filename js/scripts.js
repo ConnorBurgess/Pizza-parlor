@@ -49,13 +49,18 @@ $(document).ready(function () {
   });
 
   $("#btn-right").click(function (event) {
-    $("#output-text-area").append(toppingArr[clickCounter]);
+    $("#output-text-area").append(toppingArr[clickCounter] + " ") ;
     clickCounter++;
+    console.log(clickCounter.length);
+    console.log(toppingArr.length);
+    if (clickCounter >= toppingArr.length) {
+      clickCounter = 0;
+    }
   });
 
   $("#btn-toppings").click(function (event) {
     event.preventDefault();
     $("#btn-small, #btn-medium, #btn-large, #btn-XL").hide();
-    $("#btn-left, #btn-right").show();
+    $("#btn-left, #btn-right, #btn-add").show();
   });
 });
