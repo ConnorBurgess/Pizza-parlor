@@ -5,12 +5,26 @@
   margin-top: 5vw;
   color: white;
   text-align: left;
-  padding-left: 10vw;
+  padding-left: 13vw;
+  margin-bottom: 5px;
   padding-bottom: 5vw;
 }
+.jumbotron img {
+  position: absolute;
+  display: flex;
+  width: 8vw;
+  height: 8vw;
+  top: 5vw;
+  right:2vw;
+  padding: 10px;
+  padding-top: 10px;
+  background-color: red;
+  border-radius: 25vw;
 
+  border: 10px solid brown;
+}
 body {
-  background-color: whitesmoke;
+  background-color: rgb(219, 237, 245);
 }
 
 .main-row {
@@ -21,6 +35,7 @@ body {
 }
 .header-col {
   border: 4px solid blue;
+  background-color: rgb(1,99,145);
   height: 3vw;
   top: 20vw;
   width: 49.8vw;
@@ -34,25 +49,28 @@ h1 {
   text-align: center;
   margin-left: 14vw;
 }
-btn {
-  margin-right: 22vw;
+button {
+  color:white;
+  
 }
 
 .output-col {
   border: 4px solid green;
+  border-radius: 30vw;
   display: flex;
   position: absolute;
-  height: 15vw;
+  height: 18vw;
   width: 49.5vw;
   left: 18.5vw;
   top: 25vw;
+  background-color: whitesmoke;
 }
 .choice-col {
   background-color: gainsboro;
   border: 4px solid purple;
   width: 49.5vw;
-  height: 15vw;
-  top: 40vw;
+  height: 10vw;
+  top: 44vw;
   left: 18.5vw;
   position: absolute;
 }
