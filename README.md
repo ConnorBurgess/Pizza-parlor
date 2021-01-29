@@ -52,6 +52,11 @@ Expect: (Pizza.pizzaCost["medium"].toEqual([totalCost + 14]);
 * Created on 1/29/21  
 
 * * *
+=
+* * *
+## Resources used
+
+Pizza icon https://icon-icons.com/icon/pizza-food/75224
 
 ## License:
 > *&copy; Connor Burgess, 2021*
