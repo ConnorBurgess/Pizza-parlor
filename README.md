@@ -58,6 +58,8 @@ Expect: (Pizza.pizzaCost["medium"].toEqual([totalCost + 14]);
 
 Pizza icon https://icon-icons.com/icon/pizza-food/75224
 
+Researching creating arrow buttons https://presscoders.com/make-a-css3-button-with-an-arrow-using-pseudo-elements/
+
 ## License:
 > *&copy; Connor Burgess, 2021*
 

@@ -35,5 +35,8 @@ $(document).ready(function () {
     event.preventDefault();
     $("#btn-small, #btn-medium, #btn-large, #btn-xl").show();
   });
-
+  $("#btn-toppings").click(function (event) {
+    event.preventDefault();
+    $("#btn-small, #btn-medium, #btn-large, #btn-xl").hide();
+  });
 });

@@ -82,6 +82,7 @@ button {
   margin-top: 3.5vw;
   vertical-align: middle;
   display:none;
+  margin: 2vw;
 }
 
 #output-image {
@@ -106,3 +107,6 @@ user-select: none;
   right: 21vw;
   font-size: 1.5vw;
 }
+
+
+/* animated arrow */
