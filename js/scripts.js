@@ -24,8 +24,9 @@ Pizza.prototype.createPizza = function () {
 }
 //UI Logic
 let currentSize = ""
-let toppingArr = []
-let newPizza = new Pizza("cheese", "medium")
+let toppingArr = ["cheese", "pepperoni", "olives", "fried chicken", "banana", "chicken livers", "hot pocket"]
+let newPizza = new Pizza("cheese", "medium");
+let clickCounter = 0;
 newPizza.pizzaCost();
 console.log(newPizza)
 
@@ -41,9 +42,17 @@ $(document).ready(function () {
   });
 
   $("#btn-small, #btn-medium, #btn-large, #btn-XL").click(function (event) {
-    let clickedId = $(this).attr("id").slice(4).charAt(0).toUpperCase() + $(this).attr("id").slice(5);
-    $("#output-text-area").text(clickedId);
+    let clickedId = $(this).attr("id").slice(4).charAt(0).toUpperCase() + $(this).attr("id").slice(5) + " ";
+    $("#output-text-area").append(clickedId);
+    $("#btn-small, #btn-medium, #btn-large, #btn-XL").hide();
+    $("#btn-left, #btn-right").show();
   });
+
+  $("#btn-right").click(function (event) {
+    $("#output-text-area").append(toppingArr[clickCounter]);
+    clickCounter++;
+  });
+
   $("#btn-toppings").click(function (event) {
     event.preventDefault();
     $("#btn-small, #btn-medium, #btn-large, #btn-XL").hide();
