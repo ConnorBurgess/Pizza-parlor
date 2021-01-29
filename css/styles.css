@@ -28,17 +28,17 @@ body {
 }
 
 .main-row {
-  border: 4px solid red;
+  background-color: rgb(1,99,145);
+  overflow: none;
   border-radius:30px;
   height: 40vw;
   width: 50vw;
 }
 .header-col {
-  border: 4px solid blue;
   background-color: rgb(1,99,145);
   height: 3vw;
   top: 20vw;
-  width: 49.8vw;
+  width: 47.8vw;
   vertical-align: middle;
   display: flex;  
   position: absolute;
@@ -55,7 +55,7 @@ button {
 }
 
 .output-col {
-  border: 4px solid green;
+  border: 4px dashed red;
   border-radius: 30vw;
   display: flex;
   position: absolute;
@@ -63,18 +63,19 @@ button {
   width: 49.5vw;
   left: 18.5vw;
   top: 25vw;
-  background-color: whitesmoke;
+  background-color: rgb(245, 241, 241,0.800);
 }
 .choice-col {
   background-color: gainsboro;
-  border: 4px solid purple;
-  width: 49.5vw;
-  height: 10vw;
+  border: 4px solid rgb(1,99,145);;
+  width: 51vw;
+  height: 12vw;
   top: 44vw;
-  left: 18.5vw;
+  left: 17.5vw;
   position: absolute;
  text-align: center;
  vertical-align: middle;
+ border-radius: 1vw;
 
 }
 .choice-col .btn {

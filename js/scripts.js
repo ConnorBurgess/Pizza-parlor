@@ -62,14 +62,16 @@ $(document).ready(function () {
 
   $("#btn-checkout").click(function (event) {
     let pizzaPrice = newPizza.pizzaCost();
-    $("#final-text-area").append(`<li> Created a ${newPizza.size} pizza with${newPizza.toppings.length >= 1 ? newPizza.toppings : " no ingredients"}. Total Cost: ${pizzaPrice}</li>`);
+    $("#final-text-area").append(`<li> Bought a ${newPizza.size} pizza with${newPizza.toppings.length >= 1 ? newPizza.toppings : " no ingredients"}. Total Cost: ${pizzaPrice}</li>`);
     $("#output-text-area").text(`Bought a pizza for ${pizzaPrice}`);
     newPizza.totalCost = 0;
+    $("#btn-small, #btn-medium, #btn-large, #btn-XL").fadeIn(1500);
+    $("#btn-left, #btn-right, #btn-add, #btn-checkout").hide();
   });
 
   $("#btn-toppings").click(function (event) {
     event.preventDefault();
     $("#btn-small, #btn-medium, #btn-large, #btn-XL").hide();
-    $("#btn-left, #btn-right, #btn-add").show();
+    $("#btn-checkout, #btn-right, #btn-add").show();
   });
 });
