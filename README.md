@@ -1,11 +1,10 @@
-# Generic Project
-#### Created By: Connor Burgess * 
-#### *Co-Created By: * 
+# Pizza Parlor
+#### Created By: Connor Burgess
 
 * * *
 
 ## Description  
-Description
+Project utilizes construcors / prototypes to create a mock pizza parlor website.
 
 * * *
 
@@ -26,14 +25,16 @@ Description
 
 * * *
 
+## Specs
+
+
 ## To Do:
 * N/A
 
 * * *
 
 ## Addition comments:
-* Created on x/x/21  
-* Currently in development and unfinished (*as of x/x/21*)
+* Created on 1/29/21  
 
 * * *
 
