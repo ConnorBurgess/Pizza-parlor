@@ -27,6 +27,13 @@ Project utilizes construcors / prototypes to create a mock pizza parlor website.
 
 ## Specs
 
+Describe: 
+Pizza.prototype.pizzaCost()
+
+Test: "It will add $3 for each counted index in a toppings[] array." 
+Expect: (Pizza.pizzaCost.toppings["cheese"].toEqual([3]);
+
+
 
 ## To Do:
 * N/A
