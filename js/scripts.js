@@ -13,7 +13,10 @@ Pizza.prototype.pizzaCost = function () {
     console.log(this.totalCost)
   }
 
-  return ( this.size === "small" ? this.totalCost += 10 : this.totalCost += 10);
+  return ( this.size === "small" ? this.totalCost += 10
+      : this.size === "medium" ? this.totalCost += 14
+        : this.size === "large" ? this.totalCost += 20
+          : this.totalCost += 24)
 }
 
 //UI Logic
