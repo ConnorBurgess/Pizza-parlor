@@ -12,7 +12,9 @@ Pizza.prototype.pizzaCost = function() {
   this.totalCost = this.totalCost + 3;
   console.log(this.totalCost)
 }
-
+  if (this.size === this.size) {
+  this.totalCost = this.totalCost + 10;
+}
 }
 
 //UI Logic
