@@ -20,7 +20,7 @@ Pizza.prototype.pizzaCost = function () {
 }
 
 Pizza.prototype.createPizza = function () {
-  
+
 }
 //UI Logic
 let firstPizza = new Pizza("cheese", "medium")
@@ -29,3 +29,11 @@ console.log(firstPizza)
 
 
 
+$(document).ready(function () {
+
+  $("#btn-size").click(function (event) {
+    event.preventDefault();
+    $("#btn-small, #btn-medium, #btn-large, #btn-xl").show();
+  });
+
+});

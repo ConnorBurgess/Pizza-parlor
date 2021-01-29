@@ -73,6 +73,15 @@ button {
   top: 44vw;
   left: 18.5vw;
   position: absolute;
+ text-align: center;
+ vertical-align: middle;
+
+}
+.choice-col .btn {
+  top: 5vw;
+  margin-top: 3.5vw;
+  vertical-align: middle;
+  display:none;
 }
 
 #output-image {
