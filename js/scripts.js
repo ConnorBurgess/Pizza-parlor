@@ -13,10 +13,11 @@ Pizza.prototype.pizzaCost = function () {
     console.log(this.totalCost)
   }
 console.log(this.size)
-  return ( this.size === "Small" ? this.totalCost += 10
+  return ( this.size.toString() === "Small" ? this.totalCost += 10
       : this.size === "Medium" ? this.totalCost += 14
         : this.size === "Large" ? this.totalCost += 20
-          : this.totalCost += 24);
+          :this.size === "XL" ? this.totalCost += 24 
+          : this.totalCost);
 }
 
 Pizza.prototype.createPizza = function () {
@@ -39,16 +40,17 @@ $(document).ready(function () {
   });
 
   $("#btn-small, #btn-medium, #btn-large, #btn-XL").click(function (event) {
-    let clickedId = $(this).attr("id").slice(4).charAt(0).toUpperCase() + $(this).attr("id").slice(5) + " ";
+    let clickedId = $(this).attr("id").slice(4).charAt(0).toUpperCase() + $(this).attr("id").slice(5);
     newPizza.size = clickedId
-    console.log("Meddddium");
-    $("#output-text-area").text(clickedId);
+    console.log(clickedId);
+    console.log(typeof clickedId);
+    $("#output-text-area").text(`Picked a ${clickedId} size pizza!`);
     $("#btn-small, #btn-medium, #btn-large, #btn-XL").hide();
     $("#btn-right, #btn-add, #btn-checkout, #btn-toppings").show(1000);
   });
 
   $("#btn-right").click(function (event) {
-    $("#topping-text-area").text(toppingArr[clickCounter]) ;
+    $("#output-text-area").text(toppingArr[clickCounter]) ;
     clickCounter++;
     if (clickCounter >= toppingArr.length) {
       clickCounter = 0;
@@ -56,13 +58,13 @@ $(document).ready(function () {
   });
 
   $("#btn-add").click(function (event) {
-    console.log(toppingArr[clickCounter]);
-    newPizza.toppings.push(toppingArr[clickCounter]);
+    $("#output-text-area").text(`Added ${toppingArr[clickCounter-1]} to the pizza!`);
+    newPizza.toppings.push(" " + toppingArr[clickCounter] + " ");
 
   });
 
   $("#btn-checkout").click(function (event) {
-    console.log(`Created a ${newPizza.size}pizza with ${newPizza.toppings}. Total Cost: ${newPizza.pizzaCost()}`);
+    $("#final-output-area").text(`Created a ${newPizza.size} pizza with${newPizza.toppings.length >= 1 ? newPizza.toppings : "no ingredients"}. Total Cost: ${newPizza.pizzaCost()}`);
     newPizza.totalCost = 0;
   });
 

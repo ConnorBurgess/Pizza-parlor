@@ -107,7 +107,7 @@ user-select: none;
   right: 28vw;
   font-size: 1.5vw;
 }
-#topping-text-area {
+#final-text-area {
   position:absolute;
   display:flex;
   bottom: 1vw;
