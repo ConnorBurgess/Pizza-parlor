@@ -104,13 +104,14 @@ user-select: none;
   position:absolute;
   display:flex;
   bottom: 1vw;
-  right: 28vw;
+  right: 14vw;
   font-size: 1.5vw;
+  font-weight: bold;
 }
 #final-text-area {
   position:absolute;
-  display:flex;
-  bottom: 1vw;
-  right: 18vw;
-  font-size: 1.5vw;
+  display:inline;
+  bottom: 3vw;
+  left: 70vw;
+  font-size: 0.8vw;
 }

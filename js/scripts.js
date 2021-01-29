@@ -47,6 +47,7 @@ $(document).ready(function () {
     $("#output-text-area").text(`Picked a ${clickedId} size pizza!`);
     $("#btn-small, #btn-medium, #btn-large, #btn-XL").hide();
     $("#btn-right, #btn-add, #btn-checkout, #btn-toppings").show(1000);
+    $("#output-text-area").text(toppingArr[clickCounter]) ;
   });
 
   $("#btn-right").click(function (event) {
@@ -58,13 +59,14 @@ $(document).ready(function () {
   });
 
   $("#btn-add").click(function (event) {
-    $("#output-text-area").text(`Added ${toppingArr[clickCounter-1]} to the pizza!`);
-    newPizza.toppings.push(" " + toppingArr[clickCounter] + " ");
+    $("#output-text-area").text(`Added ${toppingArr[clickCounter- 1]} to the pizza!`);
+    newPizza.toppings.push(" " + toppingArr[clickCounter - 1] + " ");
 
   });
 
   $("#btn-checkout").click(function (event) {
-    $("#final-output-area").text(`Created a ${newPizza.size} pizza with${newPizza.toppings.length >= 1 ? newPizza.toppings : "no ingredients"}. Total Cost: ${newPizza.pizzaCost()}`);
+    $("#final-text-area").append(`<li> Created a ${newPizza.size} pizza with${newPizza.toppings.length >= 1 ? newPizza.toppings : " no ingredients"}. Total Cost: ${newPizza.pizzaCost()}</li>`);
+    $("#final-text-area").empty();
     newPizza.totalCost = 0;
   });
 
