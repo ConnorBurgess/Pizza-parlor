@@ -1,6 +1,5 @@
 //Business Logic
 function Pizza() {
-  this.topping = "";
   this.size = "";
   this.toppings = [];
   this.totalCost = 0;
@@ -19,7 +18,8 @@ Pizza.prototype.pizzaCost = function () {
 
 //UI Logic
 $(document).ready(function () {
-  let toppingArr = ["cheese", "pepperoni", "olives", "fried chicken", "banana", "chicken livers", "hot pocket", "mushrooms", "candy canes", "pineapple"]
+
+  let toppingArr = ["cheese", "pepperoni", "olives", "fried chicken", "banana", "chicken livers", "hot pocket", "mushrooms", "candy canes", "artichoke", "anchovy", "pineapple"];
   let newPizza = new Pizza();
   let clickCounter = 0;
   $("#btn-toppings").hide();
