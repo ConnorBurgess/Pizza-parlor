@@ -10,6 +10,7 @@
   padding-bottom: 5vw;
   display:none;
 }
+
 .jumbotron img {
   position: absolute;
   display: flex;
@@ -23,10 +24,12 @@
   border-radius: 25vw;
   border: 10px solid brown;
 }
+
 body {
   background-color: rgb(219, 237, 245);
   background-image: url('../img/wallpaper.jpg')
 }
+
 .main-row {
   background-color: rgb(1,99,145);
   overflow: none;
@@ -34,6 +37,7 @@ body {
   height: 40vw;
   width: 50vw;
 }
+
 .header-col {
   background-color: rgb(1,99,145);
   height: 3vw;
@@ -44,6 +48,7 @@ body {
   position: absolute;
   border-radius: 10px;
 }
+
 h1 { 
   margin-top: 0.4vw;
   text-align: center;
@@ -52,9 +57,11 @@ h1 {
   font-size: 3.5vw;
   text-shadow: 2px 2px #ff0000;
 }
+
 button {
   color:white;
 }
+
 .output-col {
   border: 4px dashed red;
   border-radius: 30vw;
@@ -66,6 +73,7 @@ button {
   top: 25vw;
   background-color: rgb(245, 241, 241,0.800);
 }
+
 .choice-col {
   background-color: gainsboro;
   border: 4px solid rgb(1,99,145);;
@@ -78,6 +86,7 @@ button {
  vertical-align: middle;
  border-radius: 1vw;
 }
+
 .choice-col .btn {
   top: 5vw;
   margin-top: 3.5vw;
@@ -89,12 +98,14 @@ button {
   border-radius: 80px;
   font-weight: bold;
 }
+
 #output-image {
   justify-content: center;
   display:flex; 
   margin-left: 16vw;
   margin-bottom: 3vw;
 }
+
 #output-image img, .jumbotron img {
 -moz-user-select: none;
 -webkit-user-select: none;
@@ -103,6 +114,7 @@ user-select: none;
 -webkit-user-drag: none;
 -webkit-touch-callout: none;
 }
+
 #output-text-area {
   position:absolute;
   display:flex;
@@ -113,6 +125,7 @@ user-select: none;
   color: black;
   text-shadow: 2px 2px silver;
 }
+
 #final-text-area {
   position:absolute;
   display:inline;
@@ -121,8 +134,14 @@ user-select: none;
   bottom: 3vw;
   left: 70vw;
   font-size: 0.8vw;
-  text-decoration: underline;
+
 }
+
 #final-text-area li {
+  color: blue;
+  background-color: rgb(216, 215, 215, 0.9);
+  font-size: 1vw;
   text-shadow: 2px 2px white;
+  border-radius: 1vw;
+  border: 2px solid red;
 }
