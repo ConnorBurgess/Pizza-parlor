@@ -32,13 +32,12 @@ $(document).ready(function () {
   $("#btn-small, #btn-medium, #btn-large, #btn-XL").click(function (event) {
     let clickedId = $(this).attr("id").slice(4).charAt(0).toUpperCase() + $(this).attr("id").slice(5);
     newPizza.size = clickedId;
-    $("#output-text-area").text(`Picked a ${clickedId} size pizza!`);
     $("#btn-small, #btn-medium, #btn-large, #btn-XL").hide();
     $("#btn-right, #btn-add, #btn-checkout, #btn-toppings").show(1000);
     return (newPizza.size === "Small" ? $("#output-text-area").text(`Big pizza in a ${clickedId} city!`)
       : newPizza.size === "Medium" ? $("#output-text-area").text(`Strike a happy ${clickedId}!`)
         : newPizza.size === "Large" ? $("#output-text-area").text(`${clickedId} and in charge!`)
-          : newPizza.size === "XL" ? $("output-text-area").text(`{clickedid}, the best size in anything!`)
+          : newPizza.size === "XL" ? $("#output-text-area").text(`${clickedId}, the best size in anything!`)
             : newPizza.size);
   });
   $("#btn-right").click(function (event) {
