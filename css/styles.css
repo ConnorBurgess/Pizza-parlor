@@ -8,6 +8,7 @@
   padding-left: 13vw;
   margin-bottom: 5px;
   padding-bottom: 5vw;
+  display:none;
 }
 .jumbotron img {
   position: absolute;
@@ -24,6 +25,7 @@
 }
 body {
   background-color: rgb(219, 237, 245);
+  background-image: url('/img/wallpaper.jpg')
 }
 
 .main-row {

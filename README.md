@@ -53,7 +53,8 @@ Expect: (Pizza.pizzaCost["medium"].toEqual([totalCost + 14]);
 
 ## Resources used
 
-Pizza icon https://icon-icons.com/icon/pizza-food/75224
+Pizza icon https://icon-icons.com/icon/pizza-food/75224 /
+  <a href="https://www.vecteezy.com/free-vector/pizza">Pizza Vectors by Vecteezy</a>
 
 * * *
 
