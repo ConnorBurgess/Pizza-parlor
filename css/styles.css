@@ -25,7 +25,7 @@
 }
 body {
   background-color: rgb(219, 237, 245);
-  background-image: url('/img/wallpaper.jpg')
+  background-image: url('../img/wallpaper.jpg')
 }
 .main-row {
   background-color: rgb(1,99,145);
@@ -54,7 +54,6 @@ h1 {
 }
 button {
   color:white;
-  
 }
 .output-col {
   border: 4px dashed red;

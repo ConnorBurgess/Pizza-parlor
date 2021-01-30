@@ -20,7 +20,7 @@ Project utilizes construcors / prototypes to help create a mock pizza parlor web
 ## Setup instructions:  
 * Clone Repo (Link:https://github.com/ConnorBurgess/Pizza-parlor.git)
 * Open index.html in browser
-
+#### Alternatively, [check out the live site](https://connorburgess.github.io/Pizza-parlor/)
 * * *
 
 ## Specs
