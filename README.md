@@ -4,7 +4,7 @@
 * * *
 
 ## Description  
-Project utilizes construcors / prototypes to create a mock pizza parlor website.
+Project utilizes construcors / prototypes to help create a mock pizza parlor website.
 
 * * *
 
@@ -18,9 +18,7 @@ Project utilizes construcors / prototypes to create a mock pizza parlor website.
 * * *
 
 ## Setup instructions:  
-* Go to [Github Pages](Link) to see webpage
-#### Alt
-* Clone Repo (Link: )
+* Clone Repo (Link:https://github.com/ConnorBurgess/Pizza-parlor.git)
 * Open index.html in browser
 
 * * *
@@ -41,7 +39,7 @@ Expect: (Pizza.pizzaCost["medium"].toEqual([totalCost + 14]);
         (Pizza.pizzaCost["large"].toEqual([totalCost + 20]);
         (Pizza.pizzaCost["extralarge"].toEqual([totalCost + 24]);
 
-
+* * *
 
 ## To Do:
 * N/A
@@ -52,13 +50,12 @@ Expect: (Pizza.pizzaCost["medium"].toEqual([totalCost + 14]);
 * Created on 1/29/21  
 
 * * *
-=
-* * *
+
 ## Resources used
 
 Pizza icon https://icon-icons.com/icon/pizza-food/75224
 
-Researching creating arrow buttons https://presscoders.com/make-a-css3-button-with-an-arrow-using-pseudo-elements/
+* * *
 
 ## License:
 > *&copy; Connor Burgess, 2021*

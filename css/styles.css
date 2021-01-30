@@ -126,4 +126,9 @@ user-select: none;
   bottom: 3vw;
   left: 70vw;
   font-size: 0.8vw;
+  text-decoration: underline;
+ 
+}
+#final-text-area li {
+  text-shadow: 2px 2px white;
 }
